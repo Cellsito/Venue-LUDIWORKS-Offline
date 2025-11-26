@@ -164,6 +164,14 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4000322827305804755, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_InputType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000322827305804755, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_ContentType
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000322827305804755, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}

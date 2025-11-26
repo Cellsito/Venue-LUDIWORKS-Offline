@@ -8,16 +8,19 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI finalTimerText;
     public TextMeshProUGUI finalScoreText;
+    public TMP_InputField nameInput;
 
     private float timer = 0f;
     private bool isPlaying = false;
 
     public int score = 0;
+    private int finalScore;
     public int addScore = 100;
     public int removeScore = 50;
 
     public GameObject infoGame;
     public GameObject gameOver;
+    public GameObject leaderBoard;
     public GameObject topPanel;
     void Start()
     {
@@ -25,6 +28,7 @@ public class GameManager : MonoBehaviour
         UpdateUI();
         infoGame.SetActive(true);
         gameOver.SetActive(false);
+        leaderBoard.SetActive(false);
     }
 
     // Update is called once per frame
@@ -90,8 +94,22 @@ public class GameManager : MonoBehaviour
 
         finalTimerText.text = $"Tempo final: {min:00}:{sec:00}";
         // Salvar valor abaixo em uma variavel
-        finalScoreText.text =$"Pontuação final: {Mathf.RoundToInt(score * (100f / (timer + 1f))).ToString()}";
+
+        finalScore = Mathf.RoundToInt(score * (100f / (timer + 1f)));
+        finalScoreText.text =$"Pontuação final: {finalScore.ToString()}";
 
         gameOver.SetActive(true);
+    }
+
+    // ESTE MÉTODO PEGA O NOME DO INPUT FIELD
+    public void SaveName()
+    {
+        string playerName = nameInput.text;
+        Debug.Log("Nome digitado: " + playerName);
+
+        FindObjectOfType<LeaderboardManager>().AddNewScore(playerName, finalScore);
+
+        gameOver.SetActive(false);
+        leaderBoard.SetActive(true);
     }
 }
