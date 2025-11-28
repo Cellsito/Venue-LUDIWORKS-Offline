@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &116625163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2106440061477423860, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+  m_PrefabInstance: {fileID: 2051360918}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88973a9735ca55a41b1a344707cd6d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &300318904
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,6 +426,10 @@ PrefabInstance:
       propertyPath: m_Value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5778315722554361931, guid: ef38774650bec0349b3ae04173cecceb, type: 3}
+      propertyPath: leaderboardManager
+      value: 
+      objectReference: {fileID: 116625163}
     - target: {fileID: 6280864791312027894, guid: ef38774650bec0349b3ae04173cecceb, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -765,13 +780,13 @@ MonoBehaviour:
   - {fileID: 581406119}
   - {fileID: 1569368637}
   questions:
-  - question: "Resposta \xE9 dois"
+  - question: "O que \xE9 phishing?"
     answers:
-    - zero
+    - "Um ataque para roubar informa\xE7\xF5es fingindo ser algo confi\xE1vel"
     - um
     - dois
     - "tr\xEAs"
-    correctIndex: 2
+    correctIndex: 0
   - question: "Resposta \xE9 zero"
     answers:
     - 'zero '
@@ -794,6 +809,7 @@ MonoBehaviour:
     - "tr\xEAs"
     correctIndex: 3
   totalQuestions: 1
+  nameInput: {fileID: 1637070156}
 --- !u!4 &588443710
 Transform:
   m_ObjectHideFlags: 0
@@ -2345,6 +2361,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4732828765271495041, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
   m_PrefabInstance: {fileID: 1637070153}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1637070156 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4358845639658673686, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
+  m_PrefabInstance: {fileID: 1637070153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1663106841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2866,6 +2893,67 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &2051360918
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 660.69617
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 216.12605
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.2514777
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 164294197349227954, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106440061477423860, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: fileName
+      value: LbKahoot.json
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190358592498763053, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
+      propertyPath: m_Name
+      value: LeaderBoardManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17c3a7184fbee8f418c0c2d6b7f1b66e, type: 3}
 --- !u!224 &2141413127 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3188523577710050992, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
@@ -2884,3 +2972,4 @@ SceneRoots:
   - {fileID: 534896681}
   - {fileID: 669181831}
   - {fileID: 711335570}
+  - {fileID: 2051360918}

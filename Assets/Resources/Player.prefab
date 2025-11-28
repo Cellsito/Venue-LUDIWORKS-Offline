@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79599057a5e13054698e15c990183ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intButton: {fileID: 0}
+  intButton: {fileID: 5564949182406847572, guid: 71fcf65e76ef25d4980ed8c354a48b3a, type: 3}
 --- !u!114 &345052025158949950
 MonoBehaviour:
   m_ObjectHideFlags: 0

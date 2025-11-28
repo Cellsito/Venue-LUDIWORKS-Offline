@@ -25,12 +25,13 @@ public class LeaderboardManager : MonoBehaviour
     }
 
     private string filePath;
+    public string fileName;
     private LeaderboardData data;
 
 
     void Awake()
     {
-        filePath = Application.persistentDataPath + "/leaderboard.json";
+        filePath = Application.persistentDataPath + "/" + fileName;
 
         if (!File.Exists(filePath))
         {

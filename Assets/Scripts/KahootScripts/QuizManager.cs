@@ -36,6 +36,7 @@ public class QuizManager : MonoBehaviour
     private float timer;
     private bool roundActive = false;
 
+    public TMP_InputField nameInput;
     void Start()
     {
         StartCoroutine(StartRound());
@@ -169,10 +170,14 @@ public class QuizManager : MonoBehaviour
 
     public void SaveName()
     {
-        //string playerName = nameInput.text;
-        //Debug.Log("Nome digitado: " + playerName);
+        string playerName = nameInput.text;
+        if (string.IsNullOrEmpty(playerName)) return;
 
-        //FindObjectOfType<LeaderboardManager>().AddNewScore(playerName, points);
+        Debug.Log("Nome digitado: " + playerName);
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerPoints points = player.GetComponent<PlayerPoints>();
+        FindObjectOfType<LeaderboardManager>().AddNewScore(playerName, points.points);
 
         gameOver.SetActive(false);
         leaderBoard.SetActive(true);
