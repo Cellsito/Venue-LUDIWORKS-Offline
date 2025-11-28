@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3248056175541627833}
   - component: {fileID: 2483562760989041977}
   - component: {fileID: 345052025158949950}
-  - component: {fileID: 421001375169680683}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -191,8 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79599057a5e13054698e15c990183ff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modalCompeticao: {fileID: 3015169997186740936, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
-  inCompetitionArea: 0
+  intButton: {fileID: 0}
 --- !u!114 &345052025158949950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -807,26 +805,3 @@ MonoBehaviour:
     interactRight: []
     interactLeft: []
   tempoEntreFrames: 0.12
---- !u!114 &421001375169680683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868199093352827768}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 0
-  ObservedComponents:
-  - {fileID: 3248056175541627833}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0

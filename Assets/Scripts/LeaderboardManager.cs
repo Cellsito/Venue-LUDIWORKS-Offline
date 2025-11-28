@@ -5,6 +5,11 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class LeaderboardManager : MonoBehaviour
 {
+    public System.Action OnScoresChanged;
+    private void Start()
+    {
+        Debug.Log("Quantidade no JSON: " + data.scores.Count);
+    }
 
     [System.Serializable]
     public class PlayerScore
@@ -44,8 +49,11 @@ public class LeaderboardManager : MonoBehaviour
         newScore.score = score;
 
         data.scores.Add(newScore);
+        Debug.Log(data.scores);
         SaveFile();
+        OnScoresChanged?.Invoke();
     }
+
 
     // ==== CARREGAR ====
     public List<PlayerScore> GetScores()
@@ -53,14 +61,13 @@ public class LeaderboardManager : MonoBehaviour
         return data.scores;
     }
 
-    // ==== FUNÇÕES DO ARQUIVO ====
     private void SaveFile()
     {
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(filePath, json);
     }
 
-    private void LoadFile()
+    public void LoadFile()
     {
         string json = File.ReadAllText(filePath);
         data = JsonUtility.FromJson<LeaderboardData>(json);

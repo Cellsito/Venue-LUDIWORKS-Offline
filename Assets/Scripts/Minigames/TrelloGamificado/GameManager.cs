@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
     public GameObject gameOver;
     public GameObject leaderBoard;
     public GameObject topPanel;
+
+    public LeaderboardManager leaderboardManager;
+
     void Start()
     {
         isPlaying = true;

@@ -1,17 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using Photon.Pun;
 using System.Linq;
 using System.Collections;
-using System.Collections.Generic;
+using static LeaderboardManager;
+using UnityEngine.SocialPlatforms.Impl;
 
-public class QuizManager : MonoBehaviourPunCallbacks
+public class QuizManager : MonoBehaviour
 {
     [Header("UI")]
     public TextMeshPro questionText;
     public TextMeshProUGUI timerText;
     public float roundTime = 10f;
+    public GameObject gameOver;
+    public GameObject leaderBoard;
 
     [Header("Answer Zones")]
     public AnswerZone2D[] answerZones; // zonas de resposta (0–3)
@@ -29,16 +30,17 @@ public class QuizManager : MonoBehaviourPunCallbacks
     public Question[] questions;
     private int currentIndex = 0;
 
+    public int totalQuestions = 2;
+    private int answeredCount = 0;
+
     private float timer;
     private bool roundActive = false;
 
     void Start()
     {
-        //if (PhotonNetwork.IsMasterClient)
-        //    StartCoroutine(StartRound());
-
-        if (!PhotonNetwork.IsConnected || PhotonNetwork.IsMasterClient)
-            StartCoroutine(StartRound());
+        StartCoroutine(StartRound());
+        gameOver.SetActive(false);
+        leaderBoard.SetActive(false);
     }
 
     IEnumerator StartRound()
@@ -52,16 +54,41 @@ public class QuizManager : MonoBehaviourPunCallbacks
         while (timer > 0)
         {
             timer -= Time.deltaTime;
-            photonView.RPC("UpdateTimer", RpcTarget.All, Mathf.CeilToInt(timer));
+            UpdateTimer(Mathf.CeilToInt(timer));
             yield return null;
         }
 
         roundActive = false;
         EvaluateAnswers();
 
+        if (answeredCount >= totalQuestions)
+        {
+            EndGame();
+            yield break;
+        }
+
         yield return new WaitForSeconds(2f);
-        if (PhotonNetwork.IsMasterClient)
-            StartCoroutine(StartRound());
+        StartCoroutine(StartRound());
+
+        answeredCount++;
+
+    }
+
+    void EndGame()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+
+        foreach (var p in players)
+        {
+            PlayerPoints score = p.GetComponent<PlayerPoints>();
+            Debug.Log($"{p.name} fez {score.points} pontos!");
+        }
+
+
+
+        // aqui mostra o painel de fim de jogo
+        gameOver.SetActive(true);  
+
     }
 
     void LoadNextQuestion()
@@ -73,14 +100,14 @@ public class QuizManager : MonoBehaviourPunCallbacks
         if (q.answers == null || q.answers.Length != 4)
         {
             Debug.LogError($"A pergunta \"{q.question}\" não tem exatamente 4 alternativas!");
-            return; // cancela o carregamento dessa pergunta
+            return;
         }
 
         // embaralha as respostas
         int[] shuffled = Enumerable.Range(0, 4).OrderBy(x => Random.value).ToArray();
         correctZoneIndex = shuffled.ToList().IndexOf(q.correctIndex);
 
-        photonView.RPC("DisplayQuestion", RpcTarget.All,
+        DisplayQuestion(
             q.question,
             q.answers[shuffled[0]],
             q.answers[shuffled[1]],
@@ -90,7 +117,6 @@ public class QuizManager : MonoBehaviourPunCallbacks
         );
     }
 
-    [PunRPC]
     void DisplayQuestion(string question, string a1, string a2, string a3, string a4, int correctIndex)
     {
         questionText.text = question;
@@ -103,7 +129,6 @@ public class QuizManager : MonoBehaviourPunCallbacks
         }
     }
 
-    [PunRPC]
     void UpdateTimer(int timeLeft)
     {
         timerText.text = $" {timeLeft}s";
@@ -111,25 +136,45 @@ public class QuizManager : MonoBehaviourPunCallbacks
 
     void EvaluateAnswers()
     {
-        if (!PhotonNetwork.IsMasterClient) return;
-
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
         foreach (var p in players)
         {
             PlayerZoneChecker2D checker = p.GetComponent<PlayerZoneChecker2D>();
-            if (checker != null)
+            PlayerPoints points = p.GetComponent<PlayerPoints>();
+
+            if (checker == null || points == null)
+                continue;
+
+            // não estava em nenhuma resposta
+            if (checker.currentZone == -1)
             {
-                if (checker.currentZone == correctZoneIndex)
-                {
-                    Debug.Log($"{p.name} acertou!");
-                    // aqui dá pra mandar RPC de pontuação
-                }
-                else
-                {
-                    Debug.Log($"{p.name} errou!");
-                }
+                Debug.Log($"{p.name} não respondeu.");
+                continue;
+            }
+
+            // resposta correta
+            if (checker.currentZone == correctZoneIndex)
+            {
+                Debug.Log($"{p.name} acertou!");
+                points.AddScore(20); // você escolhe quanto vale
+            }
+            else
+            {
+                Debug.Log($"{p.name} errou!");
+                points.RemoveScore(15); // perde pontos
             }
         }
+    }
+
+    public void SaveName()
+    {
+        //string playerName = nameInput.text;
+        //Debug.Log("Nome digitado: " + playerName);
+
+        //FindObjectOfType<LeaderboardManager>().AddNewScore(playerName, points);
+
+        gameOver.SetActive(false);
+        leaderBoard.SetActive(true);
     }
 }

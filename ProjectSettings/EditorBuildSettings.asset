@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameKahoot.unity
     guid: 8f4832a19dbc6d34b9bf51cc9be9301e
+  - enabled: 1
+    path: Assets/Scenes/Wordle.unity
+    guid: 2ba333343679206418420d28823d2783
+  - enabled: 1
+    path: Assets/Scenes/Tetris.unity
+    guid: 630f35829b7ac9142bdee65ffe9b51b7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

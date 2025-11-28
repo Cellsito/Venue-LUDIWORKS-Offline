@@ -1,29 +1,41 @@
 using UnityEngine;
 using TMPro;
+using System.Linq;
 
-public class LeaderBoardUI : MonoBehaviour
+public class LeaderboardUI : MonoBehaviour
 {
-    public GameObject entryPrefab;
-    public Transform contentParent;
+    public LeaderboardManager leaderboardManager;
+    public GameObject scoreEntryPrefab;      // Score Entry
+    public Transform contentParent;          // ScrollView/Viewport/Content
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        leaderboardManager.OnScoresChanged += ListarScores;
+        ListarScores();
     }
-    //public void ShowLeaderboard()
-    //{
-    //    var scores = LeaderboardManager.LoadScores();
+    public void ListarScores()
+    {
+        // limpa itens anteriores
+        foreach (Transform child in contentParent)
+            Destroy(child.gameObject);
 
-    //    foreach (var score in scores)
-    //    {
-    //        GameObject newEntry = Instantiate(entryPrefab, contentParent);
+        // pega dados do json (ordenado opcionalmente)
 
-    //        var texts = newEntry.GetComponentsInChildren<TextMeshProUGUI>();
-    //        texts[0].text = score.playerName;
-    //        texts[1].text = score.score.ToString();
+        var scores = leaderboardManager.GetScores()
+            .OrderByDescending(s => s.score)
+            .ToList();
 
-    //        newEntry.SetActive(true);
-    //    }
-    //}
+        foreach (var s in scores)
+        {
+            GameObject entry = Instantiate(scoreEntryPrefab, contentParent);
+
+            // Acessa os textos do Score Entry:
+            TextMeshProUGUI nameText = entry.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+            TextMeshProUGUI scoreText = entry.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+
+            nameText.text = s.name;
+            scoreText.text = s.score.ToString();
+        }
+        leaderboardManager.LoadFile();
+    }
 }
