@@ -12,6 +12,7 @@ public class BackToScene : MonoBehaviour
     // Update is called once per frame
     public void BackToRooms()
     { 
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Rooms");
     }
 }

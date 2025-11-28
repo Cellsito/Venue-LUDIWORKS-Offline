@@ -102,6 +102,8 @@ public class GameManager : MonoBehaviour
         finalScoreText.text =$"Pontuação final: {finalScore.ToString()}";
 
         gameOver.SetActive(true);
+
+        Time.timeScale = 0f;
     }
 
     // ESTE MÉTODO PEGA O NOME DO INPUT FIELD
@@ -109,6 +111,8 @@ public class GameManager : MonoBehaviour
     {
         string playerName = nameInput.text;
         Debug.Log("Nome digitado: " + playerName);
+        if (string.IsNullOrEmpty(playerName)) return;
+
 
         FindObjectOfType<LeaderboardManager>().AddNewScore(playerName, finalScore);
 

@@ -750,6 +750,7 @@ GameObject:
   - component: {fileID: 588443710}
   - component: {fileID: 588443709}
   - component: {fileID: 588443711}
+  - component: {fileID: 588443712}
   m_Layer: 0
   m_Name: QuizManager
   m_TagString: Untagged
@@ -837,6 +838,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e66a1c50f71c214d97682b20616b4d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &588443712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588443708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c79e5fd03666f34f8568cb8e8258277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: {fileID: 1637070157}
 --- !u!1 &647413703
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2264,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1663106845}
     m_Modifications:
+    - target: {fileID: 2314587955908291592, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
+      propertyPath: m_text
+      value: Pressione "Enter" para confirmar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421173481079095962, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4358845639658673686, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
       propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2347,7 +2369,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3402156486087261948, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
@@ -2370,6 +2393,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1637070157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8485345944376840176, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
+  m_PrefabInstance: {fileID: 1637070153}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1663106841

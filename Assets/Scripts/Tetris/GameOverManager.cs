@@ -24,6 +24,13 @@ public class GameOverManager : MonoBehaviour
             gameOverPanel.SetActive(true);
 
         Time.timeScale = 0f; // pause game
+        
+    }
+
+    public void Update()
+    {
+        GetPointsTXT getPoints = FindAnyObjectByType<GetPointsTXT>();
+        getPoints.GetPointsPuzzle();
     }
 
     public void RestartGame()

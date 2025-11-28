@@ -86,9 +86,13 @@ public class QuizManager : MonoBehaviour
         }
 
 
+        GetPointsTXT getPoints = FindAnyObjectByType<GetPointsTXT>();
+        getPoints.GetPointsKahoot();
 
         // aqui mostra o painel de fim de jogo
-        gameOver.SetActive(true);  
+        gameOver.SetActive(true);
+
+        Time.timeScale = 0f;
 
     }
 

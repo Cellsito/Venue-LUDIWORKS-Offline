@@ -63,15 +63,15 @@ public class Piece : MonoBehaviour
 
     private void HandleMoveInputs()
     {
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             if (Move(Vector2Int.down))
                 stepTime = Time.time + stepDelay;
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             Move(Vector2Int.left);
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             Move(Vector2Int.right);
     }
 
