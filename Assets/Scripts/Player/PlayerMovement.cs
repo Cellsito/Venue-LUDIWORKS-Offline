@@ -8,6 +8,19 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveInput;
     private Vector2 moveVelocity;
 
+
+    [Header("Footstep Settings")]
+    public AudioSource footstepSource;
+    public AudioClip[] footstepClips;
+
+    public float stepInterval = 0.35f;
+    public float pitchMin = 0.9f;
+    public float pitchMax = 1.1f;
+
+    private float stepTimer = 0f;
+    private bool wasWalking = false;
+
+        
     public Transform playerPosition;
     //public Animator animator;
 
@@ -50,6 +63,28 @@ public class PlayerMovement : MonoBehaviour
         //    animator.SetFloat("MoveY", moveY);
         //    animator.SetFloat("Speed", moveInput.sqrMagnitude);
         //}
+
+        bool isWalking = moveInput.sqrMagnitude > 0.1f;
+
+        if (isWalking)
+        {
+            stepTimer -= Time.deltaTime;
+
+            if (stepTimer <= 0f)
+            {
+                PlayFootstep();
+                stepTimer = stepInterval;
+            }
+        }
+        else
+        {
+            if (wasWalking && footstepSource.isPlaying)
+                footstepSource.Stop();
+
+            stepTimer = 0f;
+        }
+
+        wasWalking = isWalking;
     }
 
     private void FixedUpdate()
@@ -58,5 +93,24 @@ public class PlayerMovement : MonoBehaviour
 
         // Movimento correto offline
         playerRigidBody.linearVelocity = moveVelocity;
+    }
+
+    // ============================================
+    //              FOOTSTEP PLAYER
+    // ============================================
+    private void PlayFootstep()
+    {
+        if (footstepClips == null || footstepClips.Length == 0)
+            return;
+
+        int index = Random.Range(0, footstepClips.Length);
+
+        footstepSource.pitch = Random.Range(pitchMin, pitchMax);
+
+        if (footstepSource.isPlaying)
+            footstepSource.Stop();
+
+        footstepSource.clip = footstepClips[index];
+        footstepSource.Play();
     }
 }

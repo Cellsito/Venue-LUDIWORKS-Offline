@@ -686,6 +686,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1179216485070693450, guid: 768c861286d6e584f865274eb6fcc5aa, type: 3}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 286.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 142.0901
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -154.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2325288255547651046, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -826,7 +842,7 @@ PrefabInstance:
     - target: {fileID: 7961735880080295105, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ac77c9c8e0c11064c9c98009cd0c96f6, type: 3}
+      objectReference: {fileID: -4978175635258432037, guid: c9c29a0f528ebfc4fa17d4e018a6a508, type: 3}
     - target: {fileID: 7961735880080295105, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Color.b
       value: 0.8066038
@@ -839,8 +855,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7961735880080295105, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3536899207648581186, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+    - {fileID: 4193380159313940057, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
@@ -1867,6 +1889,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1179216485070693450, guid: 768c861286d6e584f865274eb6fcc5aa, type: 3}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 309.4594
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 158.3303
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1563687077061314561, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2325288255547651046, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2007,7 +2045,7 @@ PrefabInstance:
     - target: {fileID: 7961735880080295105, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ac77c9c8e0c11064c9c98009cd0c96f6, type: 3}
+      objectReference: {fileID: 1980544533405574767, guid: 0cbb218f9aa092840858d9755976a06a, type: 3}
     - target: {fileID: 7961735880080295105, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Color.b
       value: 0.8066038
@@ -2020,8 +2058,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7961735880080295105, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3536899207648581186, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+    - {fileID: 4193380159313940057, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
@@ -2245,7 +2289,7 @@ PrefabInstance:
     - target: {fileID: 5327512923658485973, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ac77c9c8e0c11064c9c98009cd0c96f6, type: 3}
+      objectReference: {fileID: 7620358518525900131, guid: 8fb085528bb1ba84d90376ed1afc5692, type: 3}
     - target: {fileID: 5327512923658485973, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Color.b
       value: 0.8066038
@@ -2257,6 +2301,18 @@ PrefabInstance:
     - target: {fileID: 5327512923658485973, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5327512923658485973, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544642791969827901, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 276.4025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5544642791969827901, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -147
       objectReference: {fileID: 0}
     - target: {fileID: 7630682408297396070, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
       propertyPath: gameTrello
@@ -2279,7 +2335,9 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2357248117474549111, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
+    - {fileID: 4193380159313940057, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5ffe1ef199f43949b8be1697cca8adf, type: 3}

@@ -4,6 +4,14 @@ using UnityEngine.Audio;
 using UnityEngine.SceneManagement; // Necessário para gerenciar cenas e o Quit
 using UnityEngine.UI; // Necessário para Text e Image
 
+// Enums para o tipo de resultado da tela final
+public enum GameResult
+{
+    Promocao,
+    Excelente,
+    Miseravel,
+    Rebaixado
+}
 public class MenuManager : MonoBehaviour
 {
     // --- NOVO: Singleton Instance ---
@@ -21,6 +29,10 @@ public class MenuManager : MonoBehaviour
     [Header("Painéis de Estado do Jogo")]
     public GameObject pausePanel;
     public GameObject fundoConfigII;
+
+    [Header("Componentes Tela Final")]
+    public TextMeshProUGUI resultadoText; // Ou Text (Unity Engine)
+    public Image faixaImage; // A imagem da faixa que muda de cor
 
     [Header("Configurações de Áudio")]
     public AudioMixer mainMixer; // Arraste seu MainMixer aqui
@@ -331,6 +343,43 @@ public class MenuManager : MonoBehaviour
 #else
             Application.Quit();
 #endif
+    }
+
+    // --- Método para Mostrar a Tela Final ---
+    public void ShowFinalScreen(GameResult result)
+    {
+        DeactivateAllPanels();
+
+        switch (result)
+        {
+            case GameResult.Promocao:
+                resultadoText.text = "PROMOÇÃO";
+                // Cor da Faixa (Exemplo: Verde)
+                faixaImage.color = new Color32(50, 200, 50, 255);
+                break;
+
+            case GameResult.Excelente:
+                resultadoText.text = "EXCELENTE!";
+                // Cor da Faixa (Exemplo: Amarelo/Ouro)
+                faixaImage.color = new Color32(255, 215, 0, 255);
+                break;
+
+            case GameResult.Miseravel:
+                resultadoText.text = "MISERÁVEL";
+                // Cor da Faixa (Exemplo: Laranja)
+                faixaImage.color = new Color32(255, 165, 0, 255);
+                break;
+
+            case GameResult.Rebaixado:
+                resultadoText.text = "REBAIXADO";
+                // Cor da Faixa (Exemplo: Vermelho)
+                faixaImage.color = new Color32(200, 50, 50, 255);
+                break;
+        }
+
+        // Opcional: Pausar o jogo se o HUD estiver ativo
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 
     private void Update()
