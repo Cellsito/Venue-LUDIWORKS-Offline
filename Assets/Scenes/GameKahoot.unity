@@ -784,32 +784,67 @@ MonoBehaviour:
   - question: "O que \xE9 phishing?"
     answers:
     - "Um ataque para roubar informa\xE7\xF5es fingindo ser algo confi\xE1vel"
-    - um
-    - dois
-    - "tr\xEAs"
+    - "Um v\xEDrus que destr\xF3i arquivos"
+    - Um sistema de firewall
+    - Um tipo de criptografia
     correctIndex: 0
-  - question: "Resposta \xE9 zero"
+  - question: "Qual \xE9 a forma mais segura de criar senha?"
     answers:
-    - 'zero '
-    - um
-    - dois
-    - "tr\xEAs"
-    correctIndex: 0
-  - question: "Resposta \xE9 um"
+    - Usar nome e data de nascimento
+    - Usar uma senha simples para lembrar
+    - "Misturar letras, n\xFAmeros e s\xEDmbolos"
+    - Usar apenas palavras reais
+    correctIndex: 2
+  - question: "O que \xE9 autentica\xE7\xE3o de dois fatores (2FA)?"
     answers:
-    - zero
-    - um
-    - dois
-    - "tr\xEAs"
+    - Entrar duas vezes com a mesma senha
+    - "Usar dois n\xEDveis de verifica\xE7\xE3o"
+    - "Atualizar o antiv\xEDrus"
+    - Usar a mesma senha em dois sites
     correctIndex: 1
-  - question: "Resposta \xE9 tr\xEAs"
+  - question: O que significa manter um software atualizado?
     answers:
-    - zero
-    - um
-    - dois
-    - "tr\xEAs"
-    correctIndex: 3
-  totalQuestions: 1
+    - Remover programas antigos
+    - "Instalar patches de seguran\xE7a e melhorias"
+    - "Criar backups todo m\xEAs"
+    - Deletar cookies
+    correctIndex: 1
+  - question: "O que \xE9 malware?"
+    answers:
+    - "Um aplicativo de confian\xE7a"
+    - "Um m\xE9todo de backup"
+    - Um programa malicioso
+    - "Um antiv\xEDrus"
+    correctIndex: 2
+  - question: "Qual pr\xE1tica \xE9 mais segura ao usar Wi-Fi p\xFAblico?"
+    answers:
+    - Acessar banco normalmente
+    - Usar VPN
+    - Compartilhar arquivos
+    - Desativar firewall
+    correctIndex: 1
+  - question: "O que \xE9 engenharia social?"
+    answers:
+    - Hackear sistemas usando ferramentas
+    - Manipular pessoas para obter acessos
+    - Criar senhas complexas
+    - Configurar o Windows
+    correctIndex: 1
+  - question: "Qual \xE9 o objetivo de um backup?"
+    answers:
+    - "Deixar o computador mais r\xE1pido"
+    - Guardar dados para evitar perda
+    - Instalar programas novos
+    - "Comprar antiv\xEDrus"
+    correctIndex: 1
+  - question: "O que significa n\xE3o reutilizar a mesma senha?"
+    answers:
+    - "Ter uma senha \xFAnica para cada conta"
+    - Usar a senha de um amigo
+    - Deixar senhas anotadas na mesa
+    - "N\xE3o usar senha em nenhum lugar"
+    correctIndex: 1
+  totalQuestions: 9
   nameInput: {fileID: 1637070156}
 --- !u!4 &588443710
 Transform:
