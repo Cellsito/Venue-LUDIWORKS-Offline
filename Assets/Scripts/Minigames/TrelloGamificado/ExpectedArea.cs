@@ -50,8 +50,8 @@ public class ExpectedArea : MonoBehaviour
         {
             CardController cardController = collision.GetComponent<CardController>();
 
-            cardController.inArea = false;
-            cardController.inCorrectArea = false;
+            //cardController.inArea = false;
+            //cardController.inCorrectArea = false;
             cardController.SetSpriteNeutro();
 
             if (cardController.status.Trim().ToLower() == statusTask.Trim().ToLower())

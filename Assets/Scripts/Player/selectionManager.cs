@@ -9,6 +9,7 @@ public class CharacterSelectionUI : MonoBehaviour
     [Header("REFERÊNCIAS UI")]
     public Image previewImage;
     public Button botaoConfirmar;
+    public GameObject checker;
 
     private int indexAtual = 0;
 
@@ -20,6 +21,8 @@ public class CharacterSelectionUI : MonoBehaviour
             indexAtual = PlayerPrefs.GetInt("PersonagemSelecionado");
             indexAtual = Mathf.Clamp(indexAtual, 0, spritesDisponiveis.Length - 1);
         }
+
+        checker.SetActive(false);
 
         AtualizarPreview();
 
@@ -50,6 +53,7 @@ public class CharacterSelectionUI : MonoBehaviour
     {
         if (previewImage != null && spritesDisponiveis.Length > 0)
             previewImage.sprite = spritesDisponiveis[indexAtual];
+        checker.SetActive(false);
     }
 
     public void ConfirmarSelecao()
@@ -57,6 +61,8 @@ public class CharacterSelectionUI : MonoBehaviour
         // 🔹 Salva o personagem escolhido
         PlayerPrefs.SetInt("PersonagemSelecionado", indexAtual);
         PlayerPrefs.Save();
+
+        checker.SetActive(true);
 
         Debug.Log($"✅ Personagem {indexAtual} confirmado e salvo!");
 

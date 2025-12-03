@@ -301,8 +301,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: A fazer
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
+  m_sharedMaterial: {fileID: 4653059404792057898, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -398,7 +398,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4653059404792057898, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -487,7 +487,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.2569046, y: -2.654683}
+  m_Offset: {x: 2.5697381, y: -2.654683}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -497,7 +497,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5138092, y: 31.143476}
+  m_Size: {x: 7.1670938, y: 31.143476}
   m_EdgeRadius: 0
 --- !u!1 &403837881 stripped
 GameObject:
@@ -762,7 +762,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.2569046, y: -2.654683}
+  m_Offset: {x: -4.3608804, y: -2.654683}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -772,7 +772,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5138092, y: 31.143476}
+  m_Size: {x: 9.721761, y: 31.143476}
   m_EdgeRadius: 0
 --- !u!114 &583427964
 MonoBehaviour:
@@ -1168,7 +1168,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.2569046, y: -2.654683}
+  m_Offset: {x: -4.086261, y: -2.6546822}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1178,7 +1178,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5138092, y: 53.643173}
+  m_Size: {x: 9.172522, y: 53.643173}
   m_EdgeRadius: 0
 --- !u!1 &927568694
 GameObject:
@@ -2153,8 +2153,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Concluido
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
+  m_sharedMaterial: {fileID: 4653059404792057898, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2250,7 +2250,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4653059404792057898, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3783,8 +3783,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fazendo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
+  m_sharedMaterial: {fileID: 4653059404792057898, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3880,7 +3880,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4653059404792057898, guid: 1c724f3dd55c0894bb78c2edf421965d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3969,7 +3969,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.2569046, y: -2.654683}
+  m_Offset: {x: 2.2469046, y: -2.6546822}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3979,7 +3979,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.5138092, y: 53.643173}
+  m_Size: {x: 6.5214276, y: 53.643173}
   m_EdgeRadius: 0
 --- !u!1 &2129891539
 GameObject:
