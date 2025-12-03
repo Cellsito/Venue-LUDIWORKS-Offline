@@ -7,7 +7,7 @@ public class PlayerActions : MonoBehaviour
 
     public GameObject intButton;
     private CompetitionArea currentArea; // <-- área atual que o player está
-    [SerializeField] private GameObject modalCompeticao;
+    [SerializeField] public GameObject modalCompeticao;
     public bool inCompetitionArea;
 
     [Header("Audio Settings")]
@@ -27,10 +27,9 @@ public class PlayerActions : MonoBehaviour
             currentArea.modalToOpen.SetActive(true);
         }
 
-        if (inCompetitionArea && Input.GetKeyDown(interactable))
+        if (currentArea!= null && Input.GetKeyDown(interactable))
         {
-            modalCompeticao.SetActive(true);
-
+            currentArea.modalToOpen.SetActive(true);
             // ====== NOVO: TOCAR MÚSICA ======
             PlayInteractionSound();
             // =================================

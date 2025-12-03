@@ -205,6 +205,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intButton: {fileID: 5564949182406847572, guid: 71fcf65e76ef25d4980ed8c354a48b3a, type: 3}
+  modalCompeticao: {fileID: 0}
+  inCompetitionArea: 0
+  audioSource: {fileID: 732875634586625740}
+  interactionClip: {fileID: 8300000, guid: f14b528a72d359d43b578ead614c84ab, type: 3}
 --- !u!114 &345052025158949950
 MonoBehaviour:
   m_ObjectHideFlags: 0

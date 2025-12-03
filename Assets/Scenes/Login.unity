@@ -188,6 +188,14 @@ PrefabInstance:
       propertyPath: selectionSprite
       value: 
       objectReference: {fileID: 1594799276}
+    - target: {fileID: 1234109872802658019, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_Url
+      value: file://C:/Users/rapha/Downloads/Venue-LUDIWORKS-Offline-main1/Venue-LUDIWORKS-Offline-main/Assets/StreamingAssets/FundoMenu2_1.mp4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234109872802658019, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2141956944792162955, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -196,6 +204,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3227894362397138693, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 837dfc0b96f3f05448abb2a05c127907, type: 3}
     - target: {fileID: 3452218888122573111, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
       propertyPath: m_Navigation.m_Mode
       value: 0
@@ -340,9 +352,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 7834299965669566260, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8022681024075695160, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8620424566012524340, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8976050109485862617, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -520,9 +540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &75960296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,9 +552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &75960297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,9 +564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &75960298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,9 +576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &75960299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -580,9 +588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &75960304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,9 +767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &812091461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,9 +779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &852689690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,9 +805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &1004151132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,9 +817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &1008537222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,9 +829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!1 &1149670232
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +958,6 @@ MonoBehaviour:
   m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
-  m_Version: 2
   m_TaaSettings:
     m_Quality: 3
     m_FrameInfluence: 0.1
@@ -976,6 +965,7 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
 --- !u!1 &1251795577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,9 +1051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &1510905774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,9 +1161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &1779233257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,9 +1187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043cd99269020d4386ce0ecd6b0b97b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: 8dd2d3bfebc10174590b8ea746137046, type: 3}
-  clickSound: {fileID: 8300000, guid: be2ac06e2e7b14248938103ec324bded, type: 3}
-  audioSource: {fileID: 0}
 --- !u!114 &1825811050
 MonoBehaviour:
   m_ObjectHideFlags: 0
