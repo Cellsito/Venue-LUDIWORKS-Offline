@@ -1612,6 +1612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasTrello
       objectReference: {fileID: 0}
+    - target: {fileID: 69059377389311893, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1221553842325298368, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1656,12 +1660,40 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4027548438753356208, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264240383457452695, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_fontSize
+      value: 46.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4264240383457452695, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 46.15
+      objectReference: {fileID: 0}
     - target: {fileID: 4867511473381344292, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4945984825535343250, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_fontSize
+      value: 47.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4945984825535343250, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 47.55
+      objectReference: {fileID: 0}
     - target: {fileID: 5297106834259949211, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382146943781166303, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 909.327
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382146943781166303, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5417673773676894605, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
@@ -1756,6 +1788,14 @@ PrefabInstance:
       propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2015841037}
+    - target: {fileID: 6092906122947051768, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1006.944
+      objectReference: {fileID: 0}
+    - target: {fileID: 6092906122947051768, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6876273960776074062, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

@@ -121,7 +121,6 @@ public class MenuManager : MonoBehaviour
 
         // Mostra HUD apenas
         hudDoJogoPanel.SetActive(true);
-        pausePanel.SetActive(false);
         fundoConfigII.SetActive(false);
 
         Time.timeScale = 1f;
@@ -188,7 +187,7 @@ public class MenuManager : MonoBehaviour
 
     public void HidePauseMenu()
     {
-        pausePanel.SetActive(false);
+        pausePanel.SetActive(false );
         hudDoJogoPanel.SetActive(true);
         // Opcional: Retomar o tempo do jogo
         Time.timeScale = 1f;
@@ -311,7 +310,6 @@ public class MenuManager : MonoBehaviour
         creditosPanel.SetActive(false);
         multiplayerMenuPanel.SetActive(false);
         hudDoJogoPanel.SetActive(false);
-        pausePanel.SetActive(false);
         selectionSprite.SetActive(false);
         // Certifique-se de que o tempo não está pausado se estivermos no menu principal
         Time.timeScale = 1f;

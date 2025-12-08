@@ -18,10 +18,6 @@ public class PlayerSpriteController : MonoBehaviour
         public Sprite[] walkRight;
         public Sprite[] walkLeft;
 
-        [Header("Push")]
-        public Sprite[] pushRight;
-        public Sprite[] pushLeft;
-
         [Header("Interact")]
         public Sprite[] interactRight;
         public Sprite[] interactLeft;
@@ -34,13 +30,12 @@ public class PlayerSpriteController : MonoBehaviour
     public float tempoEntreFrames = 0.12f;
 
     private SpriteRenderer sr;
-    private Rigidbody2D rb;
 
     private Sprite[] animAtual;
     private int frameAtual;
     private float contadorTempo;
 
-    private enum Estado { Idle, Walk, Push, Interact }
+    private enum Estado { Idle, Walk, Interact }
     private Estado estado = Estado.Idle;
 
     private enum Direcao { Down, Up, Right, Left }
@@ -53,23 +48,18 @@ public class PlayerSpriteController : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
 
-        // Carrega personagem salvo
         personagemAtual = PlayerPrefs.GetInt("PersonagemSelecionado", 0);
 
-        // Animação inicial
         SetAnimation(GetIdleArray(ultimaDirecao));
     }
 
     void Update()
     {
-        // Movimento detectado
         float movX = Input.GetAxisRaw("Horizontal");
         float movY = Input.GetAxisRaw("Vertical");
         movimentoInput = new Vector2(movX, movY).normalized;
 
-        // Direção
         if (movimentoInput.magnitude > 0)
         {
             if (Mathf.Abs(movX) > Mathf.Abs(movY))
@@ -78,20 +68,17 @@ public class PlayerSpriteController : MonoBehaviour
                 direcaoAtual = movY > 0 ? Direcao.Up : Direcao.Down;
         }
 
-        // Estado atual
         Estado novoEstado =
             Input.GetKey(KeyCode.E) ? Estado.Interact :
-            (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) ? Estado.Push :
             (movimentoInput.magnitude > 0) ? Estado.Walk :
             Estado.Idle;
 
-        // Se algo mudou → troca animação
         if (novoEstado != estado || direcaoAtual != ultimaDirecao)
         {
             estado = novoEstado;
             ultimaDirecao = direcaoAtual;
 
-            AtualizarAnimacaoPorEstado();   // 🔥 IMPORTANTE: antes estava comentado
+            AtualizarAnimacaoPorEstado();
         }
 
         AtualizarAnimacaoTempo();
@@ -110,10 +97,6 @@ public class PlayerSpriteController : MonoBehaviour
 
             case Estado.Walk:
                 SetAnimation(GetWalkArray(ultimaDirecao));
-                break;
-
-            case Estado.Push:
-                SetAnimation(ultimaDirecao == Direcao.Left ? GetPushLeft() : GetPushRight());
                 break;
 
             case Estado.Interact:
@@ -189,12 +172,9 @@ public class PlayerSpriteController : MonoBehaviour
         };
     }
 
-    private Sprite[] GetPushRight() => GetCurrentCharacter().pushRight;
-    private Sprite[] GetPushLeft() => GetCurrentCharacter().pushLeft;
     private Sprite[] GetInteractRight() => GetCurrentCharacter().interactRight;
     private Sprite[] GetInteractLeft() => GetCurrentCharacter().interactLeft;
 
-    // Manual selection
     public void DefinirPersonagem(int index)
     {
         personagemAtual = Mathf.Clamp(index, 0, personagens.Length - 1);
