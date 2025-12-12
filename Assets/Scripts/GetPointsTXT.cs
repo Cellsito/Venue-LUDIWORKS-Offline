@@ -1,9 +1,11 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 public class GetPointsTXT : MonoBehaviour
 {
     public TextMeshProUGUI points;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

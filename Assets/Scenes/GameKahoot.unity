@@ -2043,6 +2043,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 0
   scoreText: {fileID: 1578988367}
+  floatingWinPrefab: {fileID: 2410252948913229403, guid: 36090dddc016d8c4489e8c065aba09dc, type: 3}
+  floatingLosePrefab: {fileID: 6765689520726414153, guid: f316d2fd867896741b77ed111b522db0, type: 3}
+  canvasTransform: {fileID: 1663106845}
 --- !u!114 &1375684675
 MonoBehaviour:
   m_ObjectHideFlags: 0
