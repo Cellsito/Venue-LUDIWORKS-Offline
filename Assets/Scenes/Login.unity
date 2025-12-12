@@ -188,12 +188,32 @@ PrefabInstance:
       propertyPath: selectionSprite
       value: 
       objectReference: {fileID: 1594799276}
+    - target: {fileID: 463073446065902555, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1234109872802658019, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
       propertyPath: m_Url
       value: file://C:/Users/rapha/Downloads/Venue-LUDIWORKS-Offline-main1/Venue-LUDIWORKS-Offline-main/Assets/StreamingAssets/FundoMenu2_1.mp4
       objectReference: {fileID: 0}
     - target: {fileID: 1234109872802658019, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
       propertyPath: m_DataSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662472508697440276, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4044433811320768055, guid: 4c4330a6a77a33e4db46951a0233b6bd, type: 3}
+    - target: {fileID: 1662472508697440276, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976974082687999964, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4044433811320768055, guid: 4c4330a6a77a33e4db46951a0233b6bd, type: 3}
+    - target: {fileID: 1976974082687999964, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}
+      propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2141956944792162955, guid: be2e15cf512b6a7469556d26c7913b5c, type: 3}

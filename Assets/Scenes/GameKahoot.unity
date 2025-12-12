@@ -2556,6 +2556,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameOver
       objectReference: {fileID: 0}
+    - target: {fileID: 4732828765271495041, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5735727685120237005, guid: f6263615e89a07e4999416045ae8db4b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2708,11 +2712,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasKahoot
       objectReference: {fileID: 0}
+    - target: {fileID: 318969572590078155, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 636205698420088039, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1221553842325298368, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4089783608664607874, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2815,6 +2827,10 @@ PrefabInstance:
     - target: {fileID: 6528034854046716014, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackToRooms
+      objectReference: {fileID: 0}
+    - target: {fileID: 7560717326875724227, guid: 817e8a13434c41b47ad47832e70666bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

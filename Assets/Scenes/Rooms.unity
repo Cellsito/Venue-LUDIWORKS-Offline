@@ -588,6 +588,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1505294453909788727, guid: ec8ff6ed15982be43924d6861620d891, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1519848335438206679, guid: ec8ff6ed15982be43924d6861620d891, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -688,13 +692,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4826855369134936406, guid: ec8ff6ed15982be43924d6861620d891, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 18b5a231d0365914abf89927a63ea551, type: 3}
     - target: {fileID: 5205552259580499533, guid: ec8ff6ed15982be43924d6861620d891, type: 3}
       propertyPath: selectionSprite
       value: 
       objectReference: {fileID: 1949014260}
+    - target: {fileID: 7746446560590616231, guid: ec8ff6ed15982be43924d6861620d891, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e7edee1bfc26b2a4ea3e3193bc1b4702, type: 3}
     - target: {fileID: 7807217776754440722, guid: ec8ff6ed15982be43924d6861620d891, type: 3}
       propertyPath: gameTrello
       value: GameTrello
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824208023321729732, guid: ec8ff6ed15982be43924d6861620d891, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

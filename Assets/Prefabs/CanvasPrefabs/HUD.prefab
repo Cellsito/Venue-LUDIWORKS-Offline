@@ -120,82 +120,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &453617854946796869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6870545502113578790}
-  - component: {fileID: 8800452260588312686}
-  - component: {fileID: 8270363639520582798}
-  m_Layer: 5
-  m_Name: hudDoJogoPanel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &6870545502113578790
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453617854946796869}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3384680239423149013}
-  m_Father: {fileID: 2224063275428587848}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50.00003, y: -102.040115}
-  m_SizeDelta: {x: 800, y: 436}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8800452260588312686
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453617854946796869}
-  m_CullTransparentMesh: 1
---- !u!114 &8270363639520582798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 453617854946796869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1695108918436216469
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,17 +356,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2544553511134815445}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 563980320982018621}
-  m_Father: {fileID: 6870545502113578790}
+  m_Father: {fileID: 2224063275428587848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -30}
+  m_AnchoredPosition: {x: -299.99994, y: 85.95989}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3814030897058431478
@@ -1041,7 +965,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6870545502113578790}
+  - {fileID: 3384680239423149013}
   - {fileID: 2457207130017653663}
   - {fileID: 7990011703354884303}
   m_Father: {fileID: 0}
@@ -1174,12 +1098,13 @@ MonoBehaviour:
   creditosPanel: {fileID: 4091807491690962539, guid: 91eaf37688ee1f74bbad740585bce3bb, type: 3}
   multiplayerMenuPanel: {fileID: 2151093741149530859, guid: b721bb6762fb0534b977bf50d35376ee, type: 3}
   hudDoJogoPanel: {fileID: 3693755905968266258, guid: 02a7ecba0ab2e464e81e323f119fb968, type: 3}
+  selectionSprite: {fileID: 0}
   pausePanel: {fileID: 8864801434522025885}
   fundoConfigII: {fileID: 3110541692696279772}
-  finalizadoPanel: {fileID: 4362128025614105612, guid: fee2ca17e1923594d8c240829f56cc0b, type: 3}
   resultadoText: {fileID: 0}
   faixaImage: {fileID: 0}
   mainMixer: {fileID: 24100000, guid: a512c237dc3c72d4b8e810f8993918d0, type: 2}
+  mainMixer2: {fileID: 0}
   musicButtonImage: {fileID: 3916235199134348531}
   musicOnSprite: {fileID: 21300000, guid: e7edee1bfc26b2a4ea3e3193bc1b4702, type: 3}
   musicOffSprite: {fileID: 21300000, guid: 06f3622cacbe67b46a823ea9f0409445, type: 3}
